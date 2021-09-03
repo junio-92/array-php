@@ -2,10 +2,10 @@
 
 //funções variadas
 
-function exibircarro ($carro){
-    echo "O nome do carro é $carro";
+function exibircarro ($carro,$carro2,$carro3){
+    echo "O nome do carro é $carro2";
 }
-exibircarro("Uno");
+exibircarro("Uno","Gol","Palio");
 
 
 echo "<br><br>";
