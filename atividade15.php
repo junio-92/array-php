@@ -22,7 +22,7 @@ $con->query("INSERT INTO estados(regiao, comida_tipica, populacao)
 
 $con->query("UPDATE estados SET comida_tipica='carne-moida' WHERE id_estados='1';");
 
-$con->query("DELETE FROM estados WHERE id_estados='6';");
+$con->query("DELETE FROM estados WHERE id_estados='50';");
 
 $busca = $con->query("SELECT * FROM estados;");
 $informacoes = $busca->fetch(PDO::FETCH_ASSOC);

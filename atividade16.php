@@ -10,16 +10,16 @@
         <h1> Regiões do Brasil</h1>
     <form action="atividade16formulario.php" method="post">
         <label>
-        Região: <input type="text" name="reg"/>
+        Região: <input type="text" name="regiao"/>
 
         </label>
 
         <label>
-            Comida tipica: <input type="text" name="comi"/>
+            Comida tipica: <input type="text" name="comida"/>
 </label>
 
     <label>
-        População: <input type="text" name="numeros"/>
+        População: <input type="text" name="populacao"/>
 </label>
 
 <label>
