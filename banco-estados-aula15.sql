@@ -13,7 +13,9 @@ populacao varchar (25)
 );
 
 
+
+
+Delete from estados where id_estados in (40,41);
+ 
+
 select*from estados;
-
-delete from estados WHERE id_estados='50';
-
