@@ -17,5 +17,20 @@
 
 $con = new PDO("mysql:host=localhost;dbname=federacao_brasil", "root", "");
 
-$con->query("INSERT INTO estados(regiao, comida_tipica, populacao) VALUES ('minas','tropeiro', '22milhoes');");
+$con->query("INSERT INTO estados(regiao, comida_tipica, populacao)
+ VALUES ('minas','tropeiro', '22milhoes');");
+
+$con->query("UPDATE estados SET comida_tipica='carne-moida' WHERE id_estados='1';");
+
+$con->query("DELETE FROM estados WHERE id_estados='6';");
+
+$busca = $con->query("SELECT * FROM estados;");
+$informacoes = $busca->fetch(PDO::FETCH_ASSOC);
+
+foreach($informacoes as $key => $valor){
+    echo "$key = $valor <br>";
+};
+
+
+
 ?>
